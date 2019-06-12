@@ -159,7 +159,7 @@ p {
 img.about-image {
         display: flex;
         align-content: flex-end;
-        width: 290px;
+        width:290px;
         height: 300px;
         margin-left: 10%;
 }
