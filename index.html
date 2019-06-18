@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Title</title>
+  <title>fio - London</title>
   <script type="text/javascript" src="scripts/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
   <link type="text/css" rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
   <body>
     <div class="header">
-      <div>
-        <img class="heading" src="images/title1.jpg" alt="title1" style="width:300px;height:200px" align="middle">
-      </div>
+      <div><img class="heading" src="images/name.jpg" alt="name" style="width:300px;height:200px" align="middle"></div>
       <div>
         <ul>
           <li><a href="#about">ABOUT</a></li>
@@ -18,29 +25,29 @@
         </ul>
       </div>
     <!-- Slideshow container -->
-      <div class="slideshow-container">
+    <div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade block">
-          <div class="numbertext">1 / 3</div>
-          <img src="images/slide1.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="images/slide2.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="images/slide3.jpg" style="width:100%">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="mySlides fade block">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/slide1.jpg" style="width:100%">
       </div>
-      <br>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/slide2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/slide3.jpg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
 
     <!-- The dots/circles -->
       <div style="text-align:center">
@@ -50,23 +57,170 @@
       </div>
     </div>
     <hr>
+
     <div class="About-container">
       <h1><a name="about">ABOUT</a></h1>
-      <p>words words words words words
-        more words more words more words
-        even more words more words more words
-        words words words words words words
-        words words words words words words <img class="about-image" src="images/about-img.png"></p>
-      <hr>
+      <p>Discover and explore fashion sample sales in London</p>
     </div>
+    <hr>
 
     <div class="Sales-container">
       <h1><a name="sales">SALES</h1>
-      <hr>
-    </div>
 
-    <div class="Sales-container">
-        <h1><a name="contact">CONTACT</h1>
+      <div class="modals">
+
+        <!-- Link to open the modal -->
+
+        <div class="image1"
+          <p><a href="#ex1" rel="modal:open"><img src="images/sales7.jpg" style="width:100%;">THE KOOPLES SAMPLE SALE</a></p>
+        </div>
+
+        <div class="image2"
+          <p><a href="#ex2" rel="modal:open"><img src="images/sales4.jpg"style="width:100%;">CHRISTOPHER KANE SAMPLE SALE</a></p>
+        </div>
+
+        <div class="image3"
+          <p><a href="#ex3" rel="modal:open"><img src="images/sales1.jpg" style="width:100%;">JIGSAW SAMPLE SALE</a></p>
+        </div>
+
+        <div class="image4"
+          <p><a href="#ex4" rel="modal:open"><img src="images/sales2.jpg" style="width:100%;">FRENCH CONNECTION SAMPLE SALE</a></p>
+        </div>
+
+        <div class="image5"
+          <p><a href="#ex5" rel="modal:open"><img src="images/sales5.jpg" style="width:100%;">SONIA RYKIEL SAMPLE SALE</a></p>
+        </div>
+
+        <div class="image6"
+          <p><a href="#ex6" rel="modal:open"><img src="images/sales6.jpg" style="width:100%;">DR MARTENS SAMPLE SALE</a></p>
+        </div>
+
+      </div>
+
+          <!-- Link to open the modal -->
+
+      <div>
+
+        <!-- Modal HTML embedded directly into document -->
+
+        <div id="ex1" class="modal">
+          <div class="modal_contents1">
+            <p>THE KOOPLES SAMPLE SALE</p>
+            <p>DATE:19th June 2019 to 21st June</p>
+            <p>LOCATION: Swiss Cottage Library, 88 Avenue Road, London, NW3 3HA</p>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Swiss%20Cottage%20Library%2C%2088%20Avenue%20Road%2C%20London%2C%20NW3%203HA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks.net</a></div>
+            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+            </div>
+          <div><a href="#" rel="modal:close"></a></div>
+        </div>
+
+        <div id="ex2" class="modal">
+          <div class="modal_contents1">
+            <p>CHRISTOPHER KANE SAMPLE SALE</p>
+            <p>DATE:25th June 2019 to 27th June</p>
+            <p>LOCATION: The Collected Group, 116 Seymour Place, London, W1H 1NW</p>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=116%20Seymour%20Place%2C%20London%2C%20W1H%201NW&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks.net</a></div>
+            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+          </div>
+          <div><a href="#" rel="modal:close"></a></div>
+        </div>
+
+        <div id="ex3" class="modal">
+          <div class="modal_contents1">
+            <p>JIGSAW SAMPLE SALE</p>
+            <p>DATE:19th June 2019 to 21st June</p>
+            <p>LOCATION: 38 Bruton Place, London, W1J 6NX</p>
+          </div>
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=38%20Bruton%20Place%2C%20London%2C%20W1J%206NX&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks.net</a></div>
+              <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+            </div>
+          <div><a href="#" rel="modal:close"></a></div>
+        </div>
+
+        <div id="ex4" class="modal">
+          <div class="modal_contents1">
+            <p>FRENCH CONNECTION SAMPLE SALE</p>
+            <p>DATE:17th June 2019 to 19th June</p>
+            <p>LOCATION: 55 Baker Street, London, W1U 8ED</p>
+          </div>
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=55%20Baker%20Street%2C%20London%2C%20W1U%208ED&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks.net</a></div>
+              <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+            </div>
+          <div><a href="#" rel="modal:close">Close</a></div>
+        </div>
+
+        <div id="ex5" class="modal">
+          <div class="modal_contents1">
+            <p>SONIA RYKIEL SAMPLE SALE</p>
+            <p>DATE:19th June 2019 to 21st June</p>
+            <p>LOCATION: The BOX, 4-6 Ram Place, London, E9 6LT</p>
+          </div>
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=4-6%20Ram%20Place%2C%20London%2C%20E9%206LT&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks.net</a></div>
+              <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+            </div>
+          <div><a href="#" rel="modal:close">Close</a></div>
+        </div>
+
+        <div id="ex6" class="modal">
+          <div class="modal_contents1">
+            <p>DR MARTENS SAMPLE SALE</p>
+            <p>DATE:18th June 2019 to 31st June</p>
+            <p>LOCATION: Protein Studios, 31 New Inn Yard, Studio Four, London, EC2A 3EY</p>
+          </div>
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=31%20New%20Inn%20Yard%2C%20Studio%20Four%2C%20London%2C%20EC2A%203EY&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks.net</a></div>
+              <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+            </div>
+          <div><a href="#" rel="modal:close">Close</a></div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <hr>
+
+    <div class="Contact-container">
+      <h1><a name="contact">CONTACT</h1>
+        <!-- Add icon library -->
+
+        <div class="socialbuttons">
+          <!-- Add font awesome icons -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-tumblr"></a>
+        </div>
+
+        <form action="action_page.php">
+          <div class="container">
+            <h1>Subscribe to our Newsletter</h1>
+          </div>
+
+          <div class="container" style="background-color:white">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Email address" name="mail" required>
+            <label>
+              <input type="checkbox" checked="checked" name="subscribe"> Monthly Newsletter
+            </label>
+          </div>
+
+          <div class="container">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+
+        <div class="findoutmore"><a href="moreaboutus.html">Click here to find out more about us</a></div>
+
+      </div>
+
+
     </div>
   </body>
 </html>
