@@ -208,6 +208,25 @@ div.modal {
     height: auto;
 }
 
+    .image1:hover {
+      opacity: 0.6;
+    }
+    .image2:hover {
+      opacity: 0.6;
+    }
+    .image3:hover {
+      opacity: 0.6;
+    }
+    .image4:hover {
+      opacity: 0.6;
+    }
+    .image5:hover {
+      opacity: 0.6;
+    }
+    .image6:hover {
+      opacity: 0.6;
+    }
+
 div.modal_contents1 p {
     display:block;
     margin-left:1%;
