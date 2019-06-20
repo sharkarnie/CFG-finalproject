@@ -1,6 +1,6 @@
 # CFG-finalproject
 
-Final submission for CFG course competition to cover:
+Final submission for Code First Girls course competition to cover:
 
 * HTML
 * CSS
